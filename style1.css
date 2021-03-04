@@ -1,0 +1,344 @@
+
+/*mobile @media only screen and (min-width): 360px*/
+
+body{
+	font-family: Century Gothic;
+	color: #ffffff;
+	background-image: url("images/background.png"); 
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+
+.title h1{ 
+	padding-top: 20px;
+	padding-left: 40px;
+	color: #ffffff;
+	font-size: 60px;
+}
+.errorbox{
+	padding-left: 20px;
+}
+
+.errorbox h2{
+	font-size: 40px;
+	margin-bottom: -20px;
+	color: #ffffff;
+}
+
+.errorbox p{ 
+	padding: 10px;
+	margin-left: 25px;
+	font-size: 15px;
+	color: #ffffff;
+}	
+
+.space{ 
+	float: right;
+	padding-top: 20px;
+}
+	
+.bar-graph {
+	padding: 0;
+	width: 100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+		-webkit-align-items: flex-end;
+			-ms-flex-align: end;
+			align-items: flex-end;
+	height: 425px;
+	margin: 40px;
+}
+
+.bar-graph li {
+	display: block;
+	padding: 1.5625rem 0;
+	position: relative;
+	text-align: center;
+	vertical-align: bottom;
+	border-radius: 4px 4px 0 0;
+	max-width: 20%;
+	height: 100%;
+	margin: 0 1.8% 0 0;
+		-webkit-flex: 1 1 15%;
+			-ms-flex: 1 1 15%;
+			flex: 1 1 15%;
+}
+
+.bar-graph .bar-graph-axis {
+	-webkit-flex: 1 1 8%;
+		-ms-flex: 1 1 8%;
+          flex: 1 1 8%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+	-webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bar-graph .bar-graph-label {
+	margin: 0;
+	background-color: none;
+	color: #8a8a8a;
+	position: relative;
+}
+
+.center{
+	width: 100%;
+	position: relative;
+	left: 0;
+	top: 50%;
+	transform: translate (-50%, -50%);
+	padding: 40px;
+	background: rgba(255,255,255,.2);
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0,0,0,.5);
+}
+.lastbox h2{
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.skillBox{
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.skillBox p{
+	color: #ffffff;
+	margin: 0 0 10px;
+	padding:0;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.skillBox p:nth-child(2){
+	float: right;
+	position: relative;
+	top: -60px;
+}
+
+.skill{
+	background: #1d1e37; 
+	padding: 4px;
+	box-sizing: border-box;
+	border: 1px solid #b3d7df;
+	border-radius: 2px;
+}
+
+.skill_level{
+	background: #b3d7df;
+	width: 100%;
+	height: 10px;
+}
+
+p{ 
+	padding: 20px;
+	font-size: 35px;
+}	
+
+.lastbox{
+	padding-left: 50px;
+	width: 99%; 
+}
+
+.b-skills{
+	border-top: 1px solid #f9f9f9;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.b-skills:last-child { margin-bottom: -30px; }
+
+.b-skills h2 { margin-bottom: 50px; font-size: 60px; color: #ffffff;}
+
+.skill-item{
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	margin-bottom: 30px;
+	color: #ffffff;
+}
+
+.chart-container{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	margin-bottom: 27px;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.skill-item .chart:before{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.skill-item .percent{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	z-index: 2;
+}
+
+.skill-item  .percent:after
+{
+	content: attr(data-after);
+	font-size: 20px;
+}    
+}
+
+@media only screen and (min-width: 768px) { 
+
+.bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+	content: "";
+	position: absolute;
+	border-bottom: 1px dashed #8a8a8a;
+	top: 0;
+	left: 0;
+	height: 50%;
+	width: 20%;
+}
+
+
+.errorbox h2{
+	font-size: 50px;
+	padding: 15px;
+	margin-bottom: -20px;
+}
+
+.errorbox p{ 
+	padding: 10px;
+	margin-left: 10px;
+	font-size: 38px;
+}	
+}
+
+@media only screen and (min-width: 1366px) {
+.bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+	width: 30%;
+}
+ 
+ .errorbox h2{
+	font-size: 55px;
+	padding: 15px;
+	margin-bottom: -20px;
+}
+
+.errorbox p{ 
+	padding: 10px;
+	margin-left: 10px;
+	font-size: 40px;
+}	
+
+.errorbox img{
+	float:left;
+	width: 6%;
+	padding: 10px;
+}
+
+.lastbox{
+	padding-left: 60px;
+	width: 99%; 
+}
+
+}
+
+@media only screen and (min-width: 1920px) {
+.bar-graph .bar-graph-label:after {
+	left: auto;
+	right: 0;
+  }
+}
+
+.bar-graph .percent {
+	letter-spacing: -3px;
+	opacity: 0.4;
+	width: 100%;
+	font-size: 1.675rem;
+	position: absolute;
+}
+
+
+.bar-graph .percent {
+    font-size: 3.875rem;
+ 
+}
+
+.bar-graph .percent span {
+	font-size: 1.875rem;
+}
+
+.bar-graph .description {
+	font-weight: 800;
+	opacity: 0.5;
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 12px;
+	bottom: 20px;
+	position: absolute;
+	font-size: 1rem;
+	overflow: hidden;
+}
+
+.bar-graph .bar.primary {
+	border: 1px solid #1779ba;
+	background: linear-gradient(#0000ff, #4040ff 70%);
+}	
+
+.bar-graph .bar.secondary {
+	border: 1px solid #767676;
+	background: linear-gradient(#909090, #767676 70%);
+}
+
+.bar-graph .bar.third {
+	border: 1px solid #3adb76;
+	background: linear-gradient(#46cf00, #59de00 70%);
+}	
+
+.bar-graph .bar.fourth {
+	border: 1px solid #ffae00;
+	background: linear-gradient(#ff0000, #e61919 70%);
+}
+
+ .errorbox h2{
+	font-size: 70px;
+	padding: 15px;
+	margin-bottom: -20px;
+}
+
+.errorbox p{ 
+	padding: 10px;
+	margin-left: 10px;
+	font-size: 50px;
+}	
+
+h3{
+	font-size: 60px;
+}
+}
+
+
+
